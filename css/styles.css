@@ -13,6 +13,9 @@ body {
   font-size: 15px;
   line-height: 1.5;
   background-color: #f4f4f4;
+  display: grid;
+  grid-template-rows: auto;
+  min-height: 100vh; 
 }
 
 .container {
@@ -94,7 +97,7 @@ header a:hover {
 /* Newsletter */
 
 #newsletter {
-  padding-block: 3rem;
+  padding-block: 2rem;
   color: #fff;
   background: #35424a;
 }
@@ -162,7 +165,9 @@ footer {
   color: #fff;
   background-color: #e8491d;
 }
-
+#showcase, #newsletter, #boxes {
+    width: 100%; /* Ensure sections take up the full width of the viewport */
+  }
 /* Media Queries */
 @media screen and (max-width: 991px) {
   .boxes-ctn {
